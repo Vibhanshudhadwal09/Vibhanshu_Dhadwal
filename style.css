@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("assets/font/Poppins/Poppins-Black.ttf") format("woff2");
+}
+.first-section{
+background: linear-gradient(-47deg, #8731e8 0%, #4528DC 100%);
+}
+li.nav-item {
+    font-size: larger;
+    padding-left: 40px;
+}
+.bg-overlay::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-47deg,#8731e8 0%,#4528DC 100%);
+    top:0;
+    opacity: 0.94;
+    z-index: -1;
+    left: 0;
+
+}
+
+
+.bg-overlay{
+    position: relative;
+}
+.welcome-area.bg-overlay::after{
+    z-index: -2;
+}
+.homepage-4 .welcome-area{
+    background: rgba(0, 0, 0, 0) url("assets/blog-7.jpg") no-repeat scroll center center / cover;
+}
+.welcome-area{
+    height: 800px;
+    z-index: 1;
+}
+.store-buttons img{
+    max-width: 180px;
+}
+.button-group{
+    margin-top: 30px;
+}
+.store-buttons a{
+    text-align: left;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:white
+}
+.button-group {
+    margin-top: 30px;
+    gap: 10px;
+}
+h1.text-white.fst-italic {
+    font-size: 4.5rem;
+}
+.sApp-btn{
+    background-color: white;
+    border: 2px solid #8731e8 ;
+    color: black ;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.sApp-btn:hover{
+    background-color: #8731e8;
+    border: 2px solid #8731e8;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+
+}
