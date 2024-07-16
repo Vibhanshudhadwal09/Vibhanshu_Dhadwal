@@ -1,13 +1,22 @@
-@font-face {
-    font-family: "Poppins";
-    src: url("assets/font/Poppins/Poppins-Black.ttf") format("woff2");
+body {
+    font-family: 'Poppins', sans-serif;
 }
+ul{
+    list-style-type:none;
+    margin-left: -25px;
+}
+
+.feature-item  {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
 .first-section{
 background: linear-gradient(-47deg, #8731e8 0%, #4528DC 100%);
 }
 li.nav-item {
     font-size: larger;
-    padding-left: 40px;
 }
 .bg-overlay::after{
     position: absolute;
@@ -21,8 +30,47 @@ li.nav-item {
     left: 0;
 
 }
+header.navbar{
+    transition: all 0.3s ease-in-out;
+}
 
-
+.navbar-dark {
+    background: black;
+    padding: 20px;
+}
+#navbarNav {
+    justify-content: end;
+}
+.avatar-sm{
+    height: 3rem;
+    width: 5rem;
+}
+.avatar-xsm {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.avatar-md {
+    height: 4rem;
+    width: 4rem;
+}
+.work-content h2{
+    font-weight: 600;
+}
+.headerbelow::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 80px;
+    background: #7c4fe0;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    margin: auto;
+}
+.ptb_100{
+    padding: 100px 0px;
+}
 .bg-overlay{
     position: relative;
 }
@@ -33,17 +81,10 @@ li.nav-item {
     background: rgba(0, 0, 0, 0) url("assets/blog-7.jpg") no-repeat scroll center center / cover;
 }
 .welcome-area{
-    height: 800px;
     z-index: 1;
 }
 .store-buttons img{
     max-width: 180px;
-}
-.button-group{
-    margin-top: 30px;
-}
-.store-buttons a{
-    text-align: left;
 }
 .navbar-light .navbar-nav .nav-link{
     color:white
@@ -75,3 +116,182 @@ h1.text-white.fst-italic {
     font-weight: bold;
 
 }
+img {
+    max-width: 100%;
+}
+h2.text-capitalize.mb-4 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+/* testimonial section */
+.testimonial {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar img {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.testimonial-info h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.testimonial-info .title {
+    color: #777;
+    font-size: 1rem;
+}
+
+.rating {
+    color: #ffc107;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.testimonial-text {
+    color: #555;
+    font-size:15px;
+    margin: 20px 0;
+    position: relative;
+    padding: 0 300px;
+}
+
+.testimonial-text .quote {
+    font-size: 2em;
+    color: blue;
+    position: absolute;
+}
+.worktext::after {
+    position: absolute;
+    content: "|";
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    right: -30px;
+   
+    bottom: 6px;
+    
+}
+.headerbelow{
+    position: relative;
+}
+.bg-grey{
+        background-color: #f6f9fe
+}
+.single-price-plan {
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.plan-button{
+    position: absolute;
+    left: 35%;
+   
+}
+.btn{
+    background: linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);
+    color: white;
+        padding: 18px 30px;
+        font-weight: 500;
+}
+.accordion-item{
+    padding: 20px;
+    background: linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);
+}
+.accordion-body p{
+    color: white;
+}
+.accordion-button::after {
+    background-image: url("assets/add.png");
+
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("assets/add.png");
+    transform: rotate(135deg);
+}
+button.accordion-button.collapsed {
+    background: linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);
+    color: white;
+    font-size: 20px;
+}
+.accordion-button:not(.collapsed) {
+    color: white;
+    background: linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);background-color: #e7f1ff;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+    font-size: 20px;
+}
+.download-area{
+    background: url("assets/blog-7.jpg")  no-repeat fixed center center / cover;
+}
+.overlay-dark{
+    position: relative;
+    z-index: 0;
+}
+.overlay-dark::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(39, 40, 80);
+    opacity: 0.80;
+    z-index: -1;
+}
+.subscribe-area{
+    background:url("assets/map.png") no-repeat  center center / cover;
+    margin: 30px;
+}
+.form-control{
+    font-size: 15px;
+    padding: 25px;
+    border: none;
+    outline:none;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 1px 10px rgba(156, 153, 153, 12);
+}
+.subscribe-form button{
+    border-radius: 8px;
+    width: 100%;
+}
+
+.social-icon{
+    display: inline;
+    height: 45px;
+    width: 45px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #8731E8;
+    color: white;
+    border-radius: 4px;
+}
+#contact-form button{
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 20px;
+}
+.contact-us ul {
+    margin-left: -30px;
+}
+/* .footer-area{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+} */
