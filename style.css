@@ -287,11 +287,17 @@ button.accordion-button.collapsed {
 .contact-us ul {
     margin-left: -30px;
 }
-/* .footer-area{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
 
-} */
+    .footer-area {
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+       
+    }
+   main{
+    background: white;
+    position: relative;
+    z-index: 1;
+   }
